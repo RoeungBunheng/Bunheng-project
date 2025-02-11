@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKE DUC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image" href="Images/cake10.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+
+</head>
+<body>
+    <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md position-fixed" id="navbar" style="width: 100%; z-index: 100;">
+            <!-- Brand -->
+              <a class="navbar-brand" href="#" id="logo"><img src="Images/background-removebg-preview.png" alt="" width="50px"><span id="logo-text">Cake DUC</span></a>
+
+              <!-- Toggler/collapsibe Button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+              </button>
+
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <!-- dropdown -->
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-bs-toggle="dropdown">
+                        Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#birthday" class="dropdown-item">Birthday Cake</a>
+                        <a href="#" class="dropdown-item">Chocolate Cake</a>
+                        <a href="#" class="dropdown-item">Party Cake</a>
+                        <a href="#" class="dropdown-item">Slice Cake</a>
+                        <a href="#" class="dropdown-item">Cup Cake</a>
+                    </div>
+                  </li>
+                  <!-- dropdown -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallary">Galary</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M221-120q-27 0-48-16.5T144-179L42-549q-5-19 6.5-35T80-600h190l176-262q5-8 14-13t19-5q10 0 19 5t14 13l176 262h192q20 0 31.5 16t6.5 35L816-179q-8 26-29 42.5T739-120H221Zm-1-80h520l88-320H132l88 320Zm260-80q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM367-600h225L479-768 367-600Zm113 240Z"/></svg>
+            </div>
+          </nav>
+        <!-- navbar end -->
+
+
+        <!-- Modal -->
+         <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cake Store</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="row">
+            <div class="div"></div>
+            <div class="col-6">
+              <label for="fname">First Name</label>
+              <input type="text" id="email" name="email" placeholder="First Name" class="form-control py-2">
+            </div>
+
+            <div class="col-6">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Last Name" class="form-control py-2">
+            </div>
+            <div class="col-12">
+              <label for="email" class="mt-3">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" class="form-control py-2">
+              <label for="pw" class="mt-3">Password</label>
+            <input type="password" id="pw" name="pw" placeholder="Password" class="mb-3 form-control py-2">
+            
+            <div class="d-flex justify-content-between">
+              <div class="div">
+                <input type="checkbox"><span class="mx-2">Remember Me?</span> 
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">Register Account</a>
+              </div>
+             
+            </div>
+            
+            <button type="submit" class="btn btn-primary form-control mt-3 fw-bold py-2">Login</button>
+            <div class="icon text-center my-4">
+              <a href="#"><i class="fa-brands fa-facebook fs-3"></i></a>
+              <a href="#"><i class="fa-brands fa-google fs-3 mx-3"></i></a>
+              <a href="#"><i class="fa-brands fa-telegram fs-3"></i></a>
+            </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- home section -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/ai.jpg" class="d-block w-100 " alt="..." style="height: 100vh;">
+            <div class="carousel-caption">
+              <h5>BAKE CAKE</h5>
+              <p>Let's Enjoy with our cake.</p>
+              <p><a href="#" class="btn btn-info mt-3">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/flower.jpg" class="d-block w-100" alt="..." style="height: 100vh;">
+            <div class="carousel-caption ">
+              <h5>FLOWER CAKE</h5>
+              <p>You can taste our cake is below</p>
+              <p><a href="#" class="btn btn-info mt-3">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/big.jpg" class="d-block w-100" alt="..."style="height: 100vh;">
+            <div class="carousel-caption">
+              <h5>CREAM CAKE</h5>
+              <p>We have a lot of cakes to show all of you .</p>
+              <p><a href="#" class="btn btn-info mt-3">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- home section end-->
+    </div>
+      <!-- top cards -->
+       <div class="container" id="box">
+        <div class="row">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="Images/cake1.webp" alt="">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="Images/cream2.webp" alt="">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="Images/cream3.webp" alt="">
+            </div>
+          </div>
+        </div>
+       </div>
+      <!-- top cards end-->
+
+       <!-- banner -->
+        <div class="banner">
+          <div class="content">
+            <h3>Delicious Cake</h3>
+            <h2>UPTO 50% OFF</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,quoud.</p>
+            <div id="btnorder"><button>Order Now</button></div>
+          </div>
+          <div class="img">
+            <img src="Images/background-removebg-preview.png" alt="">
+          </div>
+        </div>
+       <!-- banner end-->
+
+        <!-- product card -->
+         <section id="product-cards">
+          <div class="container">
+            <h1>CAKES</h1>
+            <div class="row" style="margin-top: 50px;">
+              <div class="col-md-3 py-3 py-md-0" style="background: transparent;">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn  " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn  " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn   border-0" title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                </div>
+                  <img src="Images/cream5.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Cream Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star "></i>
+                      <i class="bx bxs-star "></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$5.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                </div>
+                  <img src="Images/choco.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Chocolate Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star "></i>
+                      <i class="bx bxs-star "></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$10.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/slice1.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Slice Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star "></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$20.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                </div>
+                  <img src="Images/fruit.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Fruit Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$22.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                  </div>
+              </div>
+            <!--  -->
+              <div class="row" style="margin-top: 40px;">
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card">
+                    <div class="overlay">
+                      <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                      <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                      <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                    </div>
+                    <img src="Images/cake3.jpg" alt="">
+                    <div class="card-body">
+                      <h3>Brown Cake</h3>
+                      <div class="star">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star "></i>
+                        <i class="bx bxs-star "></i>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      <h6>$7.25 <span><button>Add cart</button></span></h6>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card">
+                    <div class="overlay">
+                      <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                      <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                      <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                    </div>
+                    <img src="Images/fruit1.jpg" alt="">
+                    <div class="card-body">
+                      <h3>Fruit Cake</h3>
+                      <div class="star">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star "></i>
+                        <i class="bx bxs-star "></i>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      <h6>$9.25 <span><button>Add cart</button></span></h6>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card">
+                    <div class="overlay">
+                      <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                      <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                      <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                    </div>
+                    <img src="Images/slice.jpg" alt="">
+                    <div class="card-body">
+                      <h3>Slice Cake</h3>
+                      <div class="star">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star "></i>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      <h6>$15.25 <span><button>Add cart</button></span></h6>
+                    </div>
+                    </div>
+                </div>
+  
+                <div class="col-md-3 py-3 py-md-0">
+                  <div class="card">
+                    <div class="overlay">
+                      <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                      <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                      <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                    </div>
+                    <img src="Images/late2.jpg" alt="">
+                    <div class="card-body">
+                      <h3>Chocolate Cake</h3>
+                      <div class="star">
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                        <i class="bx bxs-star checked"></i>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                      <h6>$12.25 <span><button>Add cart</button></span></h6>
+                    </div>
+                    </div>
+                </div>
+            </div>            
+          </div>
+
+         </section>
+        <!-- product card end-->
+         <section id="product-cards">
+          <div class="container">
+            <h1 id="birthday">BIRTHDAY CAKE</h1>
+            <div class="row" style="margin-top: 50px;">
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/small1.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$4 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/cake7.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$1.50 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/small3.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$3.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/cake7.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$2.50 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 py-3 py-md-0" style="margin-top: 40px;">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/cake7.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$5.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 py-3 py-md-0" style="margin-top: 40px;">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/small2.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$6.30 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 py-3 py-md-0" style="margin-top: 40px;">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/cake7.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$12.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 py-3 py-md-0" style="margin-top: 40px;">
+                <div class="card">
+                  <div class="overlay">
+                    <button type="button" class="btn " title="Add to cart"><i><img src="Images/eye.png" alt="" width="25px"></i></button>
+                    <button type="button" class="btn " title="Add to wishlist"><i><img src="Images/heart.png" alt="" width="25px"></i></button>                      
+                    <button type="button" class="btn " title="Quick shop"><i><img src="Images/sell cake.png" alt="" width="25px"></i></button>                      
+                  </div>
+                  <img src="Images/small1.jpg" alt="">
+                  <div class="card-body">
+                    <h3>Bithday Cake</h3>
+                    <div class="star">
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                      <i class="bx bxs-star checked"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h6>$10.25 <span><button>Add cart</button></span></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- gallary -->
+             <section id="gallary">
+              <div class="container">
+                <h1>OUR GALLARY</h1>
+                <div class="row" style="margin-top: 30px;">
+                  <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                      <div class="overlay">
+                        <h3 class="text-center">Donut</h3>                        
+                      </div>
+                      <img src="Images/slice4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                      <div class="overlay">
+                        <h3 class="text-center">Ice cream</h3>                        
+                      </div>
+                      <img src="Images/cake9.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                      <div class="overlay">
+                        <h3 class="text-center">Cup Cake</h3>                        
+                      </div>
+                      <img src="Images/slice3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                  <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                      <div class="overlay">
+                        <h3 class="text-center">Delicious Cake</h3>                        
+                      </div>
+                      <img src="Images/big4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                      <div class="overlay">
+                        <h3 class="text-center">Slice Cake</h3>                        
+                      </div>
+                      <img src="Images/big2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                      <div class="overlay">
+                        <h3 class="text-center">Ice Cake</h3>                        
+                      </div>
+                      <img src="Images/small1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- About -->
+           <div class="container mt-5">
+            <h1 id="About">About</h1>
+            <div class="row mt-5">
+              <div class="col-6 col-12 col-md-6 col-sm-12 ">
+                <img src="Images/cream3.webp" alt="" class="rounded-5" width="100%">
+              </div>
+              <div class="col-6 col-12 col-md-6 col-sm-12">
+                <p class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci fugiat corrupti. Earum maxime quas nostrum natus error expedita qui nemo rem illo provident ut optio fugit ad atque, dolore modi repellendus impedit ratione. A, quaerat? Veritatis, quidem at quas, obcaecati, illo inventore unde laboriosam corrupti ipsa distinctio perspiciatis quisquam.</p>
+              </div>
+            </div>
+           </div>
+            <!-- About end -->
+
+            <!-- Contact -->
+            <div class="container" id="contact">
+              <h1 class="text-center">CONTACT US</h1>
+              <div class="row mt-5">
+                <div class="col-6 col-sm-12 col-md-6">
+                  <div class="row">
+
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12">
+                      <h5><i class="fa-solid fa-location-dot"></i><span class="mx-2">Location</span></h5>
+                    <p class="text-dark">Our Shop at DUC</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12">
+                      <h5><i class="fa-solid fa-phone"></i><span class="mx-2">Call Us</span></h5>
+                    <p class="text-dark">+855 : 092****89</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-12 col-lg-12">
+                      <h5><i class="fa-solid fa-envelope"></i><span class="mx-2">Email</span></h5>
+                      <p class="text-dark">roeungbunheng678@gmail.com</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                  <form action="">
+                    <div class="row">
+                      <div class="div"></div>
+                      <div class="col-6">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" class="form-control py-2">
+                      </div>
+
+                      <div class="col-6">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Name" class="form-control py-2">
+                      </div>
+                      <div class="col-12">
+                        <label for="num" class="mt-3">Phone Number</label>
+                      <input type="tel" id="num" name="num" placeholder="Phone Number" class="form-control py-2">
+                      <label for="mss" class="mt-3">Message</label>
+                      <textarea name="mess" id="mess" placeholder="Message" class="form-control py-3 bg-textarea"></textarea>
+                      </div>
+                      
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Contact end -->
+
+             <!-- FOOTER -->
+            <div class="  container-fluid bg-secondary text-white py-4 mt-5">
+              <div class="container text-center">
+                  <div class="row">
+                      <div class="col-md-4 mb-3 bb-footer">
+                          <h5>About Us</h5>
+                          <p>We sell our cakes everyday,<br>it has a lot of cakes for all of you guy.</p>
+                            <a href="#"><i class="fa-brands fa-facebook fs-3 text-white mx-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram fs-3 text-white mx-2"></i></a>                      </div>
+                      <div class="col-md-4 mb-3 bb-footer">
+                          <h5>Quick Links</h5>
+                          <ul class="list-unstyled">
+                              <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                              <li><a href="#gallary" class="text-white text-decoration-none">Galary</a></li>
+                              <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-4 mb-3 bb-footer">
+                          <h5 class="mb-3">Follow Us</h5>
+                          <div class="icon text-center my-4">
+                            <a href="#"><i class="fa-brands fa-facebook fs-3 text-white"></i></a>
+                            <a href="#"><i class="fa-brands fa-google fs-3 text-white mx-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram fs-3 text-white"></i></a>
+                          </div>
+                      </div>
+              </div>
+                  <p class="mb-0">&copy; 2025 Your Cakes. All rights reserved.</p>
+              </div>
+            </div>
+             <!-- FOOTER -->
+
+             
+       
+</body>
+</html>
